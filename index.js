@@ -9,7 +9,8 @@ getconnection();
 const app = express();
 const port = process.env.PORT || 8000;
 const corsOptions = {
-  origin: "http://localhost:3000",
+  // origin: "http://localhost:3000",
+  origin: "https://city-estate-hub-frontend.vercel.app/",
   credentials: true,
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   allowedHeaders: "Content-Type,Authorization,authtoken",
